@@ -197,6 +197,12 @@ class MoodleInstaller extends LibraryInstaller
         return '';
     }
 
+    /**
+     * Fetch the extra data for an installed package.
+     *
+     * @param string $packageName
+     * @return array<string, mixed>
+     */
     protected function getExtraForInstalledPackage(string $packageName): array
     {
         if (!\Composer\InstalledVersions::isInstalled($packageName)) {
@@ -209,7 +215,18 @@ class MoodleInstaller extends LibraryInstaller
             return [];
         }
 
-        $composerData = json_decode(file_get_contents($composerFile), true);
+        $filecontent = file_get_contents($composerFile);
+        if ($filecontent === false) {
+            return [];
+        }
+
+        $composerData = json_decode($filecontent, true);
+
+        if (!is_array($composerData)) {
+            return [];
+        }
+
+        /** @var array<string, mixed> */
         return $composerData['extra'] ?? [];
     }
 }

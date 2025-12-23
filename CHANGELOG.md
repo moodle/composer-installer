@@ -7,6 +7,10 @@ The format of this change log follows the advice given at [Keep a CHANGELOG](htt
 
 ## [Unreleased]
 
+### Fixed
+
+- Fix linting issues.
+
 ## [1.1.0] - 2025-12-23
 
 ### Fixed
