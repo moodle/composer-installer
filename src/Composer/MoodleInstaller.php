@@ -52,6 +52,16 @@ class MoodleInstaller extends LibraryInstaller
     }
 
     /**
+     * Get the list of supported plugin types.
+     *
+     * @return array<string>
+     */
+    public function getPluginTypes(): array
+    {
+        return $this->locations;
+    }
+
+    /**
      * @inheritDoc
      */
     public function supports(string $packageType): bool
