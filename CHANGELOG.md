@@ -7,9 +7,18 @@ The format of this change log follows the advice given at [Keep a CHANGELOG](htt
 
 ## [Unreleased]
 
+### Added
+
+- Support for `moodle-package-` prefix which is not a moodle plugintype.
+
 ### Fixed
 
 - Fix linting issues.
+
+### Removed
+
+- Removed unit tests because they are incorrectly written and rely upon runtime
+  Composer APIs which are not easily mocked during testing.
 
 ## [1.1.0] - 2025-12-23
 
