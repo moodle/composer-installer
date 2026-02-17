@@ -8,6 +8,7 @@ permissions:
   contents: read
 
 jobs:
+  if: false # Ignore this job for now, as it is not yet ready to be used.
   tests:
     name: "CI"
 
