@@ -2,10 +2,6 @@ parameters:
     level: 9
     paths:
         - src
-        - tests
-    ignoreErrors:
-        - '~Test::[a-zA-Z0-9]+Provider\(\) return type~'
 
 includes:
-    #- phpstan.baseline.neon
     - vendor/phpstan/phpstan-phpunit/extension.neon
