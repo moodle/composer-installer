@@ -34,6 +34,12 @@ class MoodleInstaller extends LibraryInstaller
     public function getInstallPath(PackageInterface $package)
     {
         $type = $package->getType();
+
+        if (str_starts_with($type, 'moodle-plugin-')) {
+            // Not a plugin type, but a Moodle plugin - use the default installation path.
+            return parent::getInstallPath($package);
+        }
+
         $plugintype = substr($type, 7); // Remove 'moodle-' prefix.
 
         if (!isset($this->locations[$plugintype])) {
@@ -50,7 +56,16 @@ class MoodleInstaller extends LibraryInstaller
      */
     public function supports(string $packageType): bool
     {
-        return str_starts_with($packageType, 'moodle-');
+        if (str_starts_with($packageType, 'moodle-')) {
+            if (str_starts_with($packageType, 'moodle-package-')) {
+                // Not a plugin type, but a package for Moodle - use the default installation path.
+                return false;
+            }
+
+            return true;
+        }
+
+        return false;
     }
 
     /**
