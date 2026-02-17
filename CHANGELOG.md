@@ -7,6 +7,8 @@ The format of this change log follows the advice given at [Keep a CHANGELOG](htt
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-02-17
+
 ### Added
 
 - Support for `moodle-package-` prefix which is not a moodle plugintype.
