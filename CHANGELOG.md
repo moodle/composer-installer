@@ -7,6 +7,10 @@ The format of this change log follows the advice given at [Keep a CHANGELOG](htt
 
 ## [Unreleased]
 
+### Fixed
+
+- Correct `moodle-plugin-` skipping to be only skip for `moodle-package-`
+
 ## [1.2.0] - 2026-02-17
 
 ### Added

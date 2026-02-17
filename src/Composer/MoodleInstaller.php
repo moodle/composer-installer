@@ -35,7 +35,7 @@ class MoodleInstaller extends LibraryInstaller
     {
         $type = $package->getType();
 
-        if (str_starts_with($type, 'moodle-plugin-')) {
+        if (str_starts_with($type, 'moodle-package-')) {
             // Not a plugin type, but a Moodle plugin - use the default installation path.
             return parent::getInstallPath($package);
         }
