@@ -7,6 +7,8 @@ The format of this change log follows the advice given at [Keep a CHANGELOG](htt
 
 ## [Unreleased]
 
+## [1.2.2] - 2026-03-19
+
 ### Fixed
 
 - Ensure that dependencies are installed before installing dependant packages
