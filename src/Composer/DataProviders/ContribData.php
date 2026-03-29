@@ -10,6 +10,9 @@ class ContribData extends \Moodle\Composer\DataProvider
     function getData(): array
     {
         return [
+            // tool_certificate subplugin types.
+            'certificateelement'  => '{$prefix}{$public}admin/tool/certificate/element/{$name}/',
+
             // mod_customcert subplugin types.
             'customcertelement'  => '{$prefix}{$public}mod/customcert/element/{$name}/',
 
