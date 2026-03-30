@@ -7,6 +7,10 @@ The format of this change log follows the advice given at [Keep a CHANGELOG](htt
 
 ## [Unreleased]
 
+### Fixed
+
+- Fixed recommended name format in README.md
+
 ## [1.2.2] - 2026-03-19
 
 ### Fixed
