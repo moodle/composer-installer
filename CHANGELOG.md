@@ -7,6 +7,10 @@ The format of this change log follows the advice given at [Keep a CHANGELOG](htt
 
 ## [Unreleased]
 
+### Added
+
+- Added support for `customcertelement` sub-plugins from `moodleworkplace/moodle-tool_certificate`
+
 ## [1.2.2] - 2026-03-19
 
 ### Fixed
