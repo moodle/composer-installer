@@ -8,7 +8,7 @@ This Composer plugin allows Moodle plugins to be installed into the correct loca
 
 Your plugin should have a `composer.json` which defines the following fields:
 
-- `name` in the format `moodle-[plugintype]_[pluginname]`
+- `name` in the format `[your-namespace]/moodle-[plugintype]_[pluginname]`
 - `type` of `moodle-[plugintype]`.
 
 ## As a site administrator
